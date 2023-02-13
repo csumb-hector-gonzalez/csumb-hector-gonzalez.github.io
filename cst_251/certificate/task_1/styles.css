@@ -1,6 +1,6 @@
 body{
   background-image: url("img/FossilBackground.jpg");
-  background-size: cover;
+  background-size: auto;
   background-repeat: repeat;
   text-align: center;
 }
