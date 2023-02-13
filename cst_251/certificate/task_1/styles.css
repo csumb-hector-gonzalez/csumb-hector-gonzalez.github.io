@@ -1,0 +1,48 @@
+body{
+  background-image: url("img/FossilBackground.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  text-align: center;
+}
+
+#title{
+  color: #ffffff;
+  background-color: #663003;
+  font-size: 450%;
+  width: 45%;
+  padding: 25px;
+  border-radius: 40px;
+  margin: 20px auto;
+}
+
+#description{
+  color: #ffffff;
+  background-color: #7a583c;
+  font-size: 150%;
+  width: 35%;
+  padding: 25px;
+  border-radius: 40px 40px 0px 0px;
+  margin: 20px auto;
+  margin-bottom: 0px;
+}
+
+#survey-form{
+  color: #ffffff;
+  background-color: #7a583c;
+  width: 35%;
+  padding: 40px;
+  border-radius: 15px 15px 40px 40px;
+  margin: 20px auto;
+  margin-top: 0px;
+}
+
+.list{
+  color: #000000;
+  background-color: #faf2e6;
+  padding: 7px;
+  border-radius: 10px;
+}
+
+h3{
+  font-size: 175%;
+}
