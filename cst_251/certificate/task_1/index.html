@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Task 1</title>
+   <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+
+<h1 id="title">Favorite Dinosaurs</h1>
+
+<p id="description">
+  This is a short survey that aims to collect data on individual's favorite dinosaurs. Thank you for participating!
+</p>
+
+<form id="survey-form">
+
+  <label id="name-label">
+    Your Name:
+    <br>
+    <br>
+  <input id="name" required type="text" placeholder="Please enter your name">
+  </label>
+  <br>
+  <br>
+
+  <label id="email-label">
+    Your Email:
+    <br>
+    <br>
+  <input id="email" required type="email" placeholder="Please enter your Email">
+  </label>
+  <br>
+  <br>
+
+  <label id="number-label">
+    Your Age:
+    <br>
+    <br>
+  <input id="number" type="number" placeholder="Age" min="1" max="125">
+  </label>
+  <br>
+  <br>
+
+  <h3>Favorite Timeperiod</h3>
+
+  <label id="dropdown-label">
+    What is your favorite Period of the Mesozoic Era?
+    <br>
+    <br>
+  <select id="dropdown">
+    <option>Triassic</option>
+    <option>Jurassic</option>
+    <option>Cretaceous</option>
+  </select>
+  </label>
+  <br>
+
+  <h3>Favorite Types of Dinosaurs</h3>
+
+  <div>
+    <p> Generally, which group of dinosaurs do you prefer?
+    </p>
+
+    <label class="list">
+    <input type="radio" name="dino_group" value="orni"> Ornithischian (bird-hipped)
+    </label>
+    <br>
+    <br>
+
+    <label class="list">
+    <input type="radio" name="dino_group" value="saur"> Saurischian (lizard-hipped)
+    </label>
+  </div>
+  <br>
+
+  <div>
+    <p> Which of these species do you like? (select all that apply)
+    </p>
+
+    <label class="list">
+    <input type="checkbox" name="fav_sp" value="b_a"> <em>Brachiosaurus altithorax</em>
+    </label>
+    <br>
+    <br>
+
+    <label class="list">
+    <input type="checkbox" name="fav_sp" value="c_s"> <em>Camarasaurus supremus</em>
+    </label>
+    <br>
+    <br>
+
+    <label class="list">
+    <input type="checkbox" name="fav_sp" value="d_s"> <em>Dakotaraptor steini</em>
+    </label>
+    <br>
+    <br>
+
+    <label class="list">
+    <input type="checkbox" name="fav_sp" value="i_c"> <em>Irritator challengeri</em>
+    </label>
+    <br>
+    <br>
+
+    <label class="list">
+    <input type="checkbox" name="fav_sp" value="o_a"> <em>Olorotitan arharensis</em>
+    </label>
+    <br>
+    <br>
+
+    <label class="list">
+    <input type="checkbox" name="fav_sp" value="p_m"> <em>Psittacosaurus mongoliensis</em>
+    </label>
+    <br>
+    <br>
+
+    <label class="list">
+    <input type="checkbox" name="fav_sp" value="s_s"> <em>Stegosaurus stenops</em>
+    </label>
+    <br>
+    <br>
+
+    <label class="list">
+    <input type="checkbox" name="fav_sp" value="t_h"> <em>Triceratops horridus</em>
+    </label>
+    <br>
+    <br>
+
+    <label class="list">
+    <input type="checkbox" name="fav_sp" value="t_r"> <em>Tyrannosaurus rex</em>
+    </label>
+    <br>
+    <br>
+
+    <label class="list">
+    <input type="checkbox" name="fav_sp" value="v_m"> <em>Velociraptor mongoliensis</em>
+    </label>
+  </div>
+  <br>
+
+  <div>
+    <h3>Please Leave Us Feedback!</h3>
+    <p>We would highly appreciate your feedback on how to improve this survey.
+      If your absolute favorite dinosaur was not included, you can mention it here!
+    </p>
+    <textarea name="comment" placeholder="Please give us your feedback!" cols="40" rows="5">
+    </textarea>
+  </div>
+  <br>
+
+  <input id="submit" type="submit">
+  <br>
+  <br>
+  <hr>
+  <br>
+  <input type="reset">
+
+</form>
+
+</body>
+</html>
