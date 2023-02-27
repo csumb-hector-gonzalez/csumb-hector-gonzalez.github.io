@@ -1,0 +1,124 @@
+body{
+  background-image: url(img/colorful-smoke.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+}
+
+#main{
+  background-color: rgba(108,103,112,.95);
+  border-radius: 2.5vw;
+  width: 90%;
+  margin-top: 5vw;
+  margin-bottom: 4vw;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: 'Noto Sans Bamum', sans-serif;
+}
+
+#title{
+  text-align: center;
+  font-size: 5.5vw;
+  padding: 2vw;
+  margin-bottom: 0vw;
+  border-left: 2.5vw double #c7c6c5;
+  border-right: 2.5vw double #c7c6c5;
+  border-radius: 10vw;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#img-div{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+figure{
+  border: 1vw solid #e38017;
+  border-radius: 2vw;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  background-color: #453a4d;
+}
+
+#image{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1vw 1vw 0vw 0vw;
+}
+
+figcaption{
+  text-align: center;
+  font-size: 2vw;
+  padding: 1vw;
+  color: #d9d9d9;
+}
+
+#sound-box{
+  width: 25%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -1vw;
+  border: 1vw solid #e38017;
+  border-radius: 10vw;
+}
+
+#tribute-info{
+  background-color: rgba(222,216,227,.95);
+  border: 0.4vw dashed #24043d;
+  border-radius: 2vw;
+  width: 90%;
+  margin: 5vw auto 3vw auto;
+  font-size: 1.4vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
+h2{
+  text-align: center;
+  font-size: 3.5vw;
+}
+
+#tribute-link{
+  color: #ae20f5;
+}
+
+#tribute-link2{
+  color: #ae20f5;
+}
+
+#link-wiki{
+  font-size: 1.4vw;
+  padding-top: 2vw;
+  padding-bottom: 0vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  text-align: center;
+  background-color: rgba(123,117,128,.95);
+}
+
+#link-quotes{
+  font-size: 1vw;
+  padding-top: 2vw;
+  padding-bottom: 4vw;
+  padding-left: 8vw;
+  padding-right: 8vw;
+  background-color: rgba(123,117,128,.95);
+  border-radius: 0vw 0vw 2.5vw 2.5vw;
+}
+
+.names-on-list{
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+li{
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
