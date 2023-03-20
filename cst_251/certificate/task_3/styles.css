@@ -1,0 +1,163 @@
+#navbar{
+  z-index: 1;
+  position: fixed;
+  width: 19%;
+  height: 100%;
+  background-color: #8a968c;
+  border-right: .5vw solid black;
+  top: 0px;
+  left: 0px;
+  overflow-y: auto;
+}
+
+#navbar header{
+  font-size: 2.5vw;
+  text-align: center;
+  padding: 2vw .5vw 2vw .5vw;
+  border-top: 1vw double #d97f18;
+  border-bottom: 1vw double #d97f18;
+  background-color: #b4b7bf;
+  font-family: 'Abril Fatface', cursive;
+}
+
+#navbar ul li{
+  list-style: none;
+  cursor: pointer;
+  position: relative;
+  right: 40px;
+}
+
+.nav-link{
+  background-color: #52555e;
+  width: 17.78vw;
+  display: flex;
+  font-size: 1.95vw;
+  padding: .75vw .5vw .75vw .5vw;
+  text-decoration: none;
+  border-top: .25vw solid #e8a410;
+  border-bottom: .25vw solid #e8a410;
+  border-radius: .5vw;
+  margin-top: .5vw;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.nav-link:link, .nav-link:visited{
+  color: white;
+}
+
+body{
+  background-color: #e6e6e6;
+}
+
+#main-doc{
+  font-size: 1rem;
+  width: 79%;
+  position: relative;
+  left: 21%;
+  margin-bottom: 150px;
+  font-family: 'Roboto Slab', serif;
+}
+
+#main-doc h2{
+  font-size: 2.25rem;
+  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.main-section{
+  margin: 4rem 0rem 4rem 0rem;
+}
+
+.apart{
+  background-color: #baa584;
+  border-radius: 2vw;
+  padding: 1rem;
+}
+
+.within{
+  background-color: #baa584;
+  padding: .2rem;
+  border-radius: 1vw;
+}
+
+.tab{
+  margin-left: 20px;
+}
+
+.tab2{
+  margin-left: 40px;
+}
+
+.tab3{
+  margin-left: 60px;
+}
+
+/* Huge credit to this website: https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php for helping me figure out how to have an image transform with css */
+
+.computer_img{
+  background: url(img/pc_img_start.png) no-repeat center;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  right: 1.25vw;
+  bottom: 1.25vw;
+  z-index: 1;
+}
+
+.computer_img:hover {
+  background: url(img/pc_img_end.png) no-repeat center;
+  width: 320px;
+  height: 320px;
+}
+
+@media (max-width:768px){
+  #navbar{
+    width: 100%;
+    height: 29%;
+    display: flex;
+    flex-direction: column;
+    border-bottom: .5vw solid black;
+  }
+  #navbar header{
+    font-size: 1.75rem;
+    border-top: 1.5vw double #d97f18;
+    border-bottom: 1.5vw double #d97f18;
+  }
+  #navbar ul{
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+  }
+  #navbar ul li{
+    width: 100%;
+  }
+  .nav-link{
+    width: 100%;
+    display: block;
+    position: relative;
+    left: 2%;
+    font-size: 1rem;
+    text-align: center;
+    border: .5vw solid #e8a410;
+    margin-top: 1vw;
+  }
+  #main-doc{
+    width: 100%;
+    left: 0px;
+    top: 250px;
+  }
+}
+
+@media (max-width:480px){
+  #navbar header{
+    border-top: 2vw double #d97f18;
+    border-bottom: 2vw double #d97f18;
+  }
+  .nav-link{
+    left: 4%;
+    border: .5vw solid #e8a410;
+    margin-top: 1vw;
+  }
+  #main-doc{
+    top: 150px;
+  }
+}
