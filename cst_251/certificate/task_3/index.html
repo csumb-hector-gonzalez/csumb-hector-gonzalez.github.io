@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width">
+   <title>Task 3</title>
+   <link rel="stylesheet" href="styles.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto+Slab&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav id="navbar">
+    <header>HTML Documentation</header>
+    <ul>
+      <li>
+        <a class="nav-link" href="#Introducing_HTML">Introducing HTML</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Boilerplate">Boilerplate</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Anatomy_of_Elements">Anatomy of Elements</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Common_Elements">Common Elements</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#Nesting_Elements">Nesting Elements</a>
+      </li>
+      <li>
+        <a class="nav-link" href="#User_Input_Elements">User Input Elements</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introducing_HTML">
+
+      <h2>Introducing HTML</h2>
+      <p> HTML stands for HyperText Markup Language.
+        It is commonly used as the baseline and foundation for many web pages and is a good starting place for those looking into designing their own websites.
+        HTML is just a file, and thus, can be edited or created using any plain text editor. Some examples of text editors include:
+      </p>
+      <ul>
+        <li>Sublime3</li>
+        <li>NotePad++</li>
+        <li>TextEdit</li>
+        <li>Atom</li>
+        <li>Vim</li>
+      </ul>
+      <p> The primary purpose of HTML is to provide content and structure to web pages.
+        These elements can then be customized and enhanced with either CSS or JS.
+      </p>
+
+    </section>
+
+    <section class="main-section" id="Boilerplate">
+
+      <h2>Boilerplate</h2>
+      <p>In order to provide consistency, as well as providing an ease of use for developers, a boilerplate has been established for HTML.
+        The boilerplate acts as a template from which many HTML pages are based upon, and this similar code is commonly shared.
+        It offers a stable starting point from which developers can build upon and is a great foundation for web pages.
+      </p>
+      <p>
+        A common iteration of the HTML Boilerplate is as follows:
+      </p>
+      <div class="apart">
+        <code>
+          &lt;!DOCTYPE html&gt; <br>
+          &lt;html&gt; <br>
+          &lt;head&gt; <br>
+          &lt;meta charset="utf-8"&gt; <br>
+          &lt;meta name="viewport" content="width=device-width"&gt; <br>
+          &lt;title&gt;&lt;/title&gt; <br>
+          &lt;/head&gt; <br>
+          &lt;body&gt; <br>
+          <br>
+          &lt;/body&gt; <br>
+          &lt;/html&gt;
+        </code>
+      </div>
+      <p>
+        For best practice, it's also recommended to include a <code class="within">lang</code> attribute within the <code class="within">&lt;html&gt;</code> tag.
+        For example, a website which is in english should include the <code class="within">lang="en"</code> attribute with the <code class="within">&lt;html&gt;</code> tag.
+        This feature assists search engines in finding websites that are the same language as a user's machine.
+      </p>
+
+    </section>
+
+    <section class="main-section" id="Anatomy_of_Elements">
+
+      <h2>Anatomy of Elements</h2>
+      <p>Within HTML files there are various different HTML elements that make up the website.
+        These elements introduce content to the web page and tell the browser what type of content should be displayed and where.
+        Most HTML elements follow an anatomy similar to this example:
+      </p>
+      <div class="apart">
+        <code>
+          &lt;nameoftag  attribute="some value"&gt; <br>
+          <span class="tab"></span>Content <br>
+          &lt;/nameoftag&gt;
+        </code>
+      </div>
+      <p> It's important to note that not all elements follow this convention.
+        Most notably, there are quite a few elements where a closing tag is not needed.
+        These elements include:
+      </p>
+      <div class="apart">
+        <code>
+          &lt;img&gt; <br>
+          &lt;br&gt; <br>
+          &lt;hr&gt;
+        </code>
+      </div>
+      <p> The tag <code class="within">&lt;img&gt;</code> is used to insert images and does not require a closing tag.
+        It's very important to note, however, that best practice entails a <code class="within">&lt;figure&gt;</code> tag, which does come with a corresponding closing tag: <code class="within">&lt;/figure&gt;</code>.
+        The tag <code class="within">&lt;br&gt;</code> introduces a break line in between text, and the <code class="within">&lt;hr&gt;</code> tag implements a horizontal line across the web page.
+      </p>
+
+    </section>
+
+    <section class="main-section" id="Common_Elements">
+
+      <h2>Common Elements</h2>
+      <p> Elements in HTML primarily see variety in the aspect of which tags are used.
+        There are many, many tags that are utilized in HTML, so this section will only be covering some of the more common tags to help beginners.
+      </p>
+      <p> One of the most common category of tags are the heading tags which can range from <code class="within">&lt;h1&gt;&lt;/h1&gt;</code> to <code class="within">&lt;h6&gt;&lt;/h6&gt;</code>, where the size of the heading gets smaller as the number increases. These tags are mainly used for titles or subheadings.
+      </p>
+      <p> In order to add images, the <code class="within">&lt;img&gt;</code> tag should be added.
+        This tag should also include the <code class="within">src=""</code> attribute, which will serve as a pathway, letting the server know which image belongs in this <code class="within">&lt;img&gt;</code> tag.
+        For the best results, the <code class="within">&lt;img&gt;</code> tag should also include the <code class="within">alt=""</code> attribute, like so:
+        <br>
+        <br>
+        <code class="within">&lt;img src="img/.jpg" alt="image"&gt;</code>
+      </p>
+      <p> To add a link, the <code class="within">&lt;a&gt;</code> tag should be used.
+        This tag will require the <code class="within">href=""</code> attribute, which is where the actual link will be placed.
+        An example is as follows:
+        <br>
+        <br>
+        <code class="within">&lt;a href="https://www.wikipedia.org/" target="_blank"&gt; Wikipedia &lt;a&gt;</code>
+      </p>
+      <p> List can also be added by using HTML and they come in the form of ordered list by number (<code class="within">&lt;ol&gt;&lt;/ol&gt;</code>), and unordered list using bullet points(<code class="within">&lt;ul&gt;&lt;/ul&gt;</code>).
+        Within these tags, the <code class="within">&lt;li&gt;</code> tag should be used to identify the list items.
+      </p>
+      <p> The following example demonstrates how to properly set up an ordered list:
+      </p>
+      <div class="apart">
+        <code>
+          &lt;ol&gt; <br>
+            <span class="tab"></span>&lt;li&gt;First&lt;/li&gt; <br>
+            <span class="tab"></span>&lt;li&gt;Second&lt;/li&gt; <br>
+            <span class="tab"></span>&lt;li&gt;Third&lt;/li&gt; <br>
+          &lt;ol&gt;
+        </code>
+      </div>
+
+
+    </section>
+
+    <section class="main-section" id="Nesting_Elements">
+
+      <h2>Nesting Elements</h2>
+      <p>An important aspect of writing and producing HTML files is organization. 
+        Just like how HTML provides structure to the web page, the code of HTML documents must also have good structure that allows development to be more streamlined, whoever the developer may be.
+        One of the ways in which HTML is organized is through the nesting of elements.
+        Nesting an element means placing an element inside another element, and indenting to indicate that the element is nested.
+        This is commonly done with the <code class="within">&lt;div&gt;</code> tag, as seen in this example:
+      </p>
+      <div class="apart">
+        <code>
+          &lt;div&gt; <br>
+            <span class="tab"></span>&lt;h1&gt; Picture &lt;/h1&gt; <br>
+            <span class="tab"></span>&lt;figure id="image-box"&gt; <br>
+              <span class="tab2"></span>&lt;img src="img/.jpg" alt="image"&gt; <br>
+              <span class="tab2"></span>&lt;figcaption&gt; <br>
+                <span class="tab3"></span>A very cool caption <br>
+              <span class="tab2"></span>&lt;/figcaption&gt; <br>
+            <span class="tab"></span>&lt;/figure&gt; <br>
+          &lt;/div&gt;
+        </code>
+      </div>
+      <p>The further a tag is within the nested element, the more elements it's inside of. It can somewhat be interpreted similarly to the concept of a
+        <a href="https://en.wikipedia.org/wiki/Matryoshka_doll" target="_blank">Russian Matryoshka Doll.</a>
+      </p>
+
+    </section>
+
+    <section class="main-section" id="User_Input_Elements">
+
+      <h2>User Input Elements</h2>
+      <p> Sometimes for certain sites, gathering information or data from people who visit the site could be useful.
+        One way of achieving this is through the use of form elements where users can answer questions in a survey and then promptly, submit their answers.
+        All of these different form tags should be embedded within a <code class="within">&lt;form&gt;&lt;/form&gt;</code> tag.
+      </p>
+      <p>
+        Some common form tags include:
+      </p>
+      <div class="apart">
+        <code>
+          &lt;input type="text" name="something"&gt; <br>
+          &lt;input type="email" name="something"&gt; <br>
+          &lt;input type="number" name="something"&gt; <br>
+          &lt;textarea name="something"&gt;&lt;/textarea&gt; <br>
+          &lt;input type="radio" name="something"&gt; <br>
+          &lt;input type="checkbox" name="something"&gt;
+        </code>
+      </div>
+      <p>
+        These elements can be further customized with additional attributes that allow for the collection of more specific data.
+      </p>
+
+    </section>
+
+    <!-- Huge credit to this website: https://www.tutorialrepublic.com/faq/how-to-change-image-on-hover-with-css.php for helping me figure out how to have an image transform with css -->
+
+    <a href="https://www.w3schools.com/html/" target="_blank">
+      <div class="computer_img"></div>
+    </a>
+
+  </main>
+
+</body>
+</html>
