@@ -1,0 +1,36 @@
+main span{
+  color: red;
+  background-color: rgba(255, 246, 79, .75);
+  font-weight: bold;
+}
+
+nav ul{
+  color: purple;
+}
+
+nav ul li span{
+  color: blue;
+}
+
+#degree-programs, #minor-programs{
+  color: magenta;
+}
+
+#degree-cd-img{
+  border-radius: 5vw 5vw 0vw 0vw;
+}
+
+#degree-cs-img{
+  border-radius: 0vw 0vw 5vw 5vw;
+}
+
+img{
+  width: 50%;
+  height: auto;
+}
+
+.bottom-imgs{
+  border: 1.5vw dashed limegreen;
+  border-radius: 3vw;
+  padding: 1vw;
+}
