@@ -7,7 +7,7 @@ html{
 @import url('https://fonts.googleapis.com/css2?family=Comme&family=Poppins:wght@600&display=swap');
 
 body{
-  background-color: beige;
+  background-color: #f5f5cb;
   background-image: url(img/hero-coast.jpg);
   background-position: center;
   background-repeat: no-repeat;
