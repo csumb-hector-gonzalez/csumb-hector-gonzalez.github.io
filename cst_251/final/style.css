@@ -13,6 +13,7 @@ body{
   background-repeat: no-repeat;
   background-size: 100%;
   margin: 0;
+  transition: ease-in .25s;
 }
 
 #nav-bar{
@@ -131,6 +132,9 @@ footer{
   #nav-bar{
     height: 9rem;
   }
+  body{
+    background-size: 135%;
+  }
   h1{
     width: 35rem;
     margin-top: 15rem;
@@ -159,6 +163,9 @@ footer{
   }
   i{
     top: 11.5rem;
+  }
+  body{
+    background-size: 150%;
   }
 }
 
