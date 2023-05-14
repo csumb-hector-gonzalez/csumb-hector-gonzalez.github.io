@@ -1,12 +1,20 @@
+html{
+  height: 100%;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Comme&family=Poppins:wght@600&display=swap');
 
 body {
-  background-color: #b4b4fe;
+  background-color: #f5f5cb;
+  margin: 0;
 }
 
 #nav-bar{
   position: fixed;
   display: flex;
+  flex-wrap: wrap;
   background-color: #0d114f;
   left: 0;
   top: 0;
@@ -17,6 +25,7 @@ body {
   box-shadow: 0px 5px 4px rgba(0,0,0,.35);
   justify-content: right;
   z-index: 2;
+  transition: ease-in .25s;
 }
 
 #nav-bar a{
@@ -35,41 +44,144 @@ body {
   background-color: #363a80;
 }
 
-p {
-  color: #000a99;
-  font-family: 'Comme', sans-serif;
-  font-weight: 800;
-  font-size: 15px;
+h1{
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+  background-color: rgba(255,255,255,.9);
+  padding: 1vw;
+  width: 42rem;
+  border-radius: 30px;
+  margin: 0 auto;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
+  transition: ease-in .25s;
 }
 
-p#first_sentence{
+#flood-road-close-img{
+  display: block;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  border: 1rem solid #0d114f;
+  border-radius: 2rem;
+  transition: ease-in .25s;
+}
+
+#intro_sentence{
+  width: 90%;
+  margin: 4rem auto;
   text-align: center;
 }
 
-p#second_sentence{
-  text-align: justify;
+h2{
+  font-family: 'Poppins', sans-serif;
+  font-size: 2.5rem;
+  text-align: center;
+  background-color: rgba(255,255,255,.9);
+  padding: 1vw;
+  width: 30rem;
+  border-radius: 30px;
+  margin: 1rem auto;
 }
 
-p#third_sentence{
-  text-align: justify; 
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
-p#fourth_sentence{
-  text-align: justify; 
+p{
+  font-family: 'Comme', sans-serif;
+  font-size: 1.75rem;
+  line-height: 125%;
 }
 
-p#fifth_sentence{
-  text-align: justify; 
+.flood-p{
+  width: 35%;
+  transition: ease-in .25s;
 }
 
+.img-p{
+  width: 525px;
+  height: 400px;
+  object-fit: cover;
+  border: .75rem solid #4248a6;
+  border-style: outset;
+  box-shadow: 2px 2px 3px rgba(0,0,0,.35);
+  transition: ease-in .25s;
+}
+
+figcaption{
+  font-size: 1.25rem;
+  font-family: 'Comme', sans-serif;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: underline;
+}
+
+main{
+  margin-bottom: 5rem;
+}
 
 footer{
   background-color: #0d114f;
   color: white;
   text-align: center;
-  border-radius: 25px 25px 0px 0px;
+  border-radius: 50px 50px 0px 0px;
   font-size: 1.25rem;
   padding-top: 1.5rem;
   padding-bottom: 1rem;
   font-family: 'Comme', sans-serif;
+}
+
+/*Media Queries for Navbar*/
+
+@media (max-width: 1160px){
+  #nav-bar{
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 995px){
+  #nav-bar{
+    height: 9rem;
+  }
+  h1{
+    margin-top: 12rem;
+    font-size: 2.75rem;
+    width: 35rem;
+  }
+  #flood-road-close-img{
+    border-width: .5rem;
+  }
+}
+
+@media (max-width: 985px){
+  .flood-p{
+    width: 85%;
+  }
+}
+
+@media (max-width: 630px){
+  h1{
+    font-size: 2rem;
+    width: 20rem;
+  }
+  h2{
+    font-size: 2rem;
+    width: 25rem;
+  }
+  .img-p{
+    width: 367.5px;
+    height: 280px;
+  }
+}
+
+@media (max-width: 560px){
+  #nav-bar{
+    font-size: 1rem;
+  }
 }
